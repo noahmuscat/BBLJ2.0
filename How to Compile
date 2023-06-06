@@ -1,0 +1,16 @@
+To begin a C/C++ program from scratch on Windows (Visual Studio):
+
+Compile with LabJackM.h (x64 or x32)::
+1. Navigate to project -> properties
+2. Once in configuration properties -> C/C++ -> general
+3. In additional include directories, add ( C:\Program Files (x86)\LabJack\Drivers ). 
+(If you have a different root drive instead ofC:\, then use that root drive.)
+
+Link with LabJackM.lib (x64)::
+1. Navigate to project -> properties
+2. Once in configuration properties -> linker -> general
+3. In Additional Library Directories, add ( C:\Program Files (x86)\LabJack\Drivers\64bit ). 
+(If you have a different root drive instead of C:\, then use that root drive.)
+
+Link with LabJackM.lib (x32)::
+To link LabJackM.lib for a 32-bit (x86) build, follow the steps above for 64-bit, but add C:\Program Files\LabJack\Drivers to the Additional Library Directories instead.
