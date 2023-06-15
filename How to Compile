@@ -14,3 +14,5 @@ Link with LabJackM.lib (x64)::
 
 Link with LabJackM.lib (x32)::
 To link LabJackM.lib for a 32-bit (x86) build, follow the steps above for 64-bit, but add C:\Program Files\LabJack\Drivers to the Additional Library Directories instead.
+
+** May be some syntax (type conversion) issues depending on the version of Visual Studio that you are running. These can be fixed using programmer discretion. 
